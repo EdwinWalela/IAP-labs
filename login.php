@@ -1,4 +1,5 @@
 <?php
+
     // import db query functions
     require("./db.php");
     

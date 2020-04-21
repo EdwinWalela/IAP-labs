@@ -28,16 +28,22 @@
             $ln = $this->last_name;
             $city = $this->city_name;
             $sql = "INSERT INTO users (id,first_name,last_name,user_city) VALUES(DEFAULT,'".$fn."','".$ln."','".$city."')";
-            echo($sql);
             if($this->conn->conn->query($sql)){
-               return $this->conn->conn->query($sql);
+                // $this->conn->closeDatabase;
+               return "saved";
             }else{
                 echo($this->conn->conn->error."\n");
+                // $this->conn->closeDatabase;
                 return null;
             }
         }
 
-        public function readAll(){return null;}
+        public function readAll(){
+            $sqll = "SELECT * FROM users";
+            $result = $this->conn->conn->query($sqll);
+            return $result;
+        }
+
         public function readUnique(){return null;}
         public function search(){return null;}
         public function update(){return null;}

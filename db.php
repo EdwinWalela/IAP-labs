@@ -13,7 +13,7 @@
         }
 
         public function closeDatabase(){
-            mysql_close($this->conn);
+            // mysql_close($this->conn);
         }
     }
 

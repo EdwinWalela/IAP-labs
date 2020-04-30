@@ -57,7 +57,7 @@
         public function isPasswordCorrect(){
             $found = false;
             $res = $this->conn->conn->query("SELECT * FROM users");
-            while($row = mysql_fetch_assoc($res)){
+            while($row = $res->fetch_assoc()){
                 $found = (password_verify($this->getPassword(),$row['password'])&& $this->getUsername() == $row['username']);
             }
             $this->conn->closeDatabase();

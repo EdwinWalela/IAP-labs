@@ -7,10 +7,12 @@
         $first_name = $_POST['first_name'];
         $last_name = $_POST['last_name'];
         $city = $_POST['city_name'];
+        $username =$_POST['username'];
+        $password=$_POST['password'];
 
-        $user = new User($first_name,$last_name,$city,'','');
+        $user = new User($first_name,$last_name,$city,$username,$password);
         if(!$user->validateForm()){
-            $user->createFormErrorSession();
+            $user->createFormErrorSessions();
             header("Refresh:0");
             die();
         }
@@ -43,9 +45,12 @@
             ?>
         </div>
             <input type="text" name="first_name" placeholder="first_name" required/><br/>
-            <input type="text" name="last_name" placeholder="last_name" required/><br/>
+            <input type="text" name="last_name" placeholder="last_name"required/><br/>
+            <input type="text" name="username" placeholder="username" required/><br/>
+            <input type="password" name="password" placeholder="password"required/><br/>
             <input type="text" name="city_name" placeholder="city" required/><br/>
             <button type="submit" name="btn-save">Save</button>
+            <a href="login.php">Login</a>
         </form>
         <h3>Users</h3>
         <?php

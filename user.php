@@ -1,6 +1,6 @@
 <?php
     require './interfaces/interface.php';
-    require './interfaces/authenticate.php';
+    require './interfaces/authenticator.php';
     require 'db.php';
 
     class User implements Crud,Authenticator{
@@ -51,7 +51,7 @@
         }
 
         public function hashPassword(){
-            $this->password = hash($this->password);
+            $this->password = hash("sha256",$this->password);
         }
 
         public function isPasswordCorrect(){
@@ -81,7 +81,7 @@
             session_destroy();
             header("Location:./index.php");
         }
-        
+
         public function save(){
             $fn = $this->first_name;
             $ln = $this->last_name;
@@ -120,7 +120,7 @@
             return !($fn == "" || $ln == "" || $city =="");
         }
 
-        public function createFormErrorSession(){
+        public function createFormErrorSessions(){
             session_start();
             $_SESSION['form_errors'] = "All Fields are required";
         }

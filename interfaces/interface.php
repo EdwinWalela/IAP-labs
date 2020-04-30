@@ -10,6 +10,6 @@
         public function removeAll();
 
         public function validateForm();
-        public function createFormErrorSession();
+        public function createFormErrorSessions();
     }
 ?>

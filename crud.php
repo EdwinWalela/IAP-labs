@@ -1,6 +1,7 @@
 <?php
 
-    interface Crud{
+    interface Crud
+    {
         public function save();
         public function readAll();
         public function readUnique();
@@ -8,8 +9,5 @@
         public function update();
         public function removeOne();
         public function removeAll();
-
-        public function validateForm();
-        public function createFormErrorSessions();
     }
 ?>

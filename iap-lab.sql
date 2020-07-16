@@ -70,7 +70,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `user_city`, `username`, `password`, `img_name`, `created_time`, `offset`) VALUES
-(1, 'Edwin', 'Walela', 'Kisumu', 'edwinwalela@strathmore.edu', 'a2y$10$2GjP2u1u0oeeLsWbKuzWh4e39RLHu6rMJgq2Xz3kYa', '', '2020-07-16 13:33:36.915130', -180);
+(1, 'john', 'doe', 'city', 'email@mail.com', 'a2y$10$2GjP2u1u0oeeLsWbKuzWh4e39RLHu6rMJgq2Xz3kYa', '', '2020-07-16 13:33:36.915130', -180);
 
 --
 -- Indexes for dumped tables

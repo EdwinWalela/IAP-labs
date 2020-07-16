@@ -26,7 +26,7 @@
 <html>
 
     <head>
-       <title>IAP-Lab</title>
+       <title>IAP-Labs</title>
        <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
        <script type="text/javascript" src="validate.js"></script>
        <link rel="stylesheet" type="text/css" href="validate.css">
@@ -45,7 +45,7 @@
       
         <button class="btn btn-primary" id="api-key-btn">Generate APi key</button> <br> <br>
 
-        <strong>Your API key:</strong><br>
+        <strong>API key:</strong><br>
 
         <textarea name="api_key" id="api_key" cols="100" rows="2" readonly> <?php echo fetchUserApiKey(); ?> </textarea>
         <hr>

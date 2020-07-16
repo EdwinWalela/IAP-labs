@@ -204,7 +204,7 @@
         
         if($this->isUserExist())
         {
-             $_SESSION['exists'] = "The user already exists";
+             $_SESSION['exists'] = "user exists";
         }
     }
 

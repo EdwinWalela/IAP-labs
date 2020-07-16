@@ -26,7 +26,7 @@
 <html>
 
     <head>
-       <title>IAP-Lab 1</title>
+       <title>IAP-Lab</title>
        <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
        <script type="text/javascript" src="validate.js"></script>
        <link rel="stylesheet" type="text/css" href="validate.css">

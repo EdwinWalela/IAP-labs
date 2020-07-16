@@ -45,7 +45,7 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`order_id`, `order_name`, `units`, `unit_price`, `order_status`) VALUES
-(1, 'Ian', 0, 0.00, 'ready');
+(1, 'Edwin', 0, 0.00, 'ready');
 
 -- --------------------------------------------------------
 
@@ -70,7 +70,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `user_city`, `username`, `password`, `img_name`, `created_time`, `offset`) VALUES
-(1, 'Ian', 'Mungai', 'Nairobi', 'ian.mungai@strathmore.edu', '$2y$10$2o9WhaRAV6m8GjP2u1u0oeeLsWbKuzWh4e39RLHu6rMJgq2Xz3kYa', '', '2020-07-16 13:33:36.915130', -180);
+(1, 'Edwin', 'Walela', 'Kisumu', 'edwinwalela@strathmore.edu', 'a2y$10$2GjP2u1u0oeeLsWbKuzWh4e39RLHu6rMJgq2Xz3kYa', '', '2020-07-16 13:33:36.915130', -180);
 
 --
 -- Indexes for dumped tables

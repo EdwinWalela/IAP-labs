@@ -51,7 +51,7 @@ function generateResponse($api_key)
 	} 
 	else
 	{
-		$res = ['success' => 0, 'message' => 'Something went wrong. Please regenerate the API key'];
+		$res = ['success' => 0, 'message' => 'Error. Please regenerate the API key'];
 	}
 	
 	return json_encode($res);

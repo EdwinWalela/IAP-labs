@@ -13,21 +13,6 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `iap-lab`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `api_keys`
---
-
 CREATE TABLE `api_keys` (
   `id` int(11) NOT NULL,
   `user_id` int(11) DEFAULT NULL,
